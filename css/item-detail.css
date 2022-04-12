@@ -1,4 +1,4 @@
-.sw-js-single-item-container .col-lg-8 > .d-flex {
+  .sw-js-single-item-container .col-lg-8 > .d-flex {
     flex-direction: column !important;
   }
   .sw-js-single-item-container .col-lg-8 > .d-flex > .magnific-popup {
@@ -17,4 +17,5 @@
     top: 0;
     left: 0;
     object-fit: cover;
-    ma
+    margin-right: 0 !important;
+  }
