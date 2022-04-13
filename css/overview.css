@@ -1,4 +1,4 @@
-body, *, .sw-font-family-jost {
+body, *:not(.fab, .far), .sw-font-family-jost{
     font-family: proxima-nova,'Helvetica Neue',Helvetica,Arial,sans-serif !important;
 }
 
