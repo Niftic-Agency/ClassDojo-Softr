@@ -40,7 +40,7 @@
 //                               <img src="${d.teacherpicture[0].url}" alt="${d.teacher} image">
 //                               <div class="label">${d.teacher}</div>
 //                             </div>
-//                             <button>Enroll in class</button>
+//                             <a href="#typeform-script-insert-dinamically">Enroll in class</a>
 //                           </div>
 //                         </div>
 //                       `
