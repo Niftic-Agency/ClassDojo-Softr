@@ -1,3 +1,13 @@
+var enrollBtn = document.querySelector('.sidebar-box button');
+var typeformCol = document.querySelector('.col-typeform-script-insert-dinamically');
+
+enrollBtn.addEventListener('click', function (e) {
+    window.scroll({
+        top: typeformCol.offsetTop,
+        left:0,
+        behavior: 'smooth' });
+}, false);
+
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   // if all three sections exist then we're on a details page
