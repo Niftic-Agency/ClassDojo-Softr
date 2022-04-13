@@ -5,12 +5,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // change the column widths of each section
     sectionIds.forEach(sectionId => {
+
+      // wrap in setInterval to make sure column classes don't get overwritten
+      const colCheck = setInterval(() => {
         const section = document.getElementById(sectionId);
         const container = section.firstElementChild;
         const rows = Array.from(container.children);
         rows.forEach(row => {
-            row.firstElementChild.className = "col-12 col-lg-8"
-        })
+          if (row.firstElementChild.className !== `col-12 col-lg-8 col-${sectionId}`) row.firstElementChild.className = `col-12 col-lg-8 col-${sectionId}`;
+        }) 
+      }, 100)
+
+      // clean up interval after 10 seconds
+      setTimeout(() => clearInterval(colCheck), 10000)
     })
   }
 });
