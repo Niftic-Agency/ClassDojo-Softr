@@ -23,9 +23,43 @@ document.addEventListener("DOMContentLoaded", function() {
         // clean up interval after 10 seconds
         setTimeout(() => clearInterval(colCheck), 10000)
       })
+
+
+      buildSidebar();
     }
   })
 
   // clean up interval after 10 seconds if section don't exist on page
   setTimeout(() => clearInterval(sectionCheck), 10000)
 });
+
+
+function buildSidebar() {
+  const sidebarDataCheck = setInterval(() => {
+    if ("itemDetailsSidebar" in window) {
+      clearInterval(sidebarDataCheck);
+
+      const d = window.itemDetailSidebar;
+
+      const sidebar = document.createElement('div');
+      sidebar.className = "item-details-sidebar";
+      sidebar.innerHTML = `
+        <div class="sidebar-wrap">
+          <div class="sidebar-box">
+            <h3>${d.course}</h3>
+            <p>${d.fdate}</p>
+            <div class="teacher">
+              <img src="${d.teacherpicture[0].url}" alt="${d.teacher} image">
+              <div class="label">${d.teacher}</div>
+            </div>
+            <button>Enroll in class</button>
+          </div>
+        </div>
+      `
+
+      const row = document.querySelector('list-details2 > .container > .row')
+      row.insertBefore(sidebar, row.firstElementChild);
+      
+    }
+  }, 100)
+}

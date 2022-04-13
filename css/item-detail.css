@@ -155,3 +155,57 @@ p[data-type="label"] {
 #faq1 .sw-accordion-border [data-toggle="collapse"].collapsed .arrow:after {
   content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10 0.00012207C4.45344 0.00012207 0 4.49405 0 10.0001C0 15.5467 4.49393 20.0001 10 20.0001C15.5466 20.0001 20 15.5062 20 10.0001C20 4.49405 15.5061 0.00012207 10 0.00012207ZM14.4939 11.1742H11.1741V14.494C11.1741 15.1418 10.6478 15.6681 10 15.6681C9.35223 15.6681 8.82591 15.1418 8.82591 14.494V11.1742H5.50607C4.8583 11.1742 4.33198 10.6479 4.33198 10.0001C4.33198 9.35235 4.8583 8.82603 5.50607 8.82603H8.82591V5.5062C8.82591 4.85842 9.35223 4.33211 10 4.33211C10.6478 4.33211 11.1741 4.85842 11.1741 5.5062V8.82603H14.4939C15.1417 8.82603 15.668 9.35235 15.668 10.0001C15.668 10.6479 15.1417 11.1742 14.4939 11.1742Z' fill='%2300B2F7'/%3E%3C/svg%3E%0A");
 }
+
+/* sidebar */
+.sidebar-wrap {
+  position: relative;
+  height: 100%;
+}
+.sidebar-box {
+  background: #E1F8FF;
+  border-radius: 24px;
+  padding: 30px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 32px;
+}
+.sidebar-box h3 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.25px;
+  color: #2C2A50;
+}
+.sidebar-box p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.25px;
+  color: #7174A0;
+}
+.sidebar-box .teacher {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.sidebar-box .teacher img {
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.sidebar-box .teacher .label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #7174A0;
+}
+.sidebar-box button {
+  height: 60px;
+  background: #00B2F7;
+  border-radius: 30px;border: 0;width: 100%;font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
