@@ -30,7 +30,7 @@
 
 //                     const d = window.itemDetailSidebar;
 //                     const sidebar = document.createElement('div');
-//                     sidebar.className = "item-details-sidebar";
+//                     sidebar.className = "item-details-sidebar col-lg-4";
 //                     sidebar.innerHTML = `
 //                         <div class="sidebar-wrap">
 //                           <div class="sidebar-box">
