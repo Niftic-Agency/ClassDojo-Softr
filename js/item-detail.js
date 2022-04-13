@@ -1,4 +1,3 @@
-
 // document.addEventListener("DOMContentLoaded", function () {
 //   // if all three sections exist then we're on a details page
 //   const sectionIds = ['list-details2', 'faq1', 'typeform-script-insert-dinamically']
