@@ -157,6 +157,12 @@ p[data-type="label"] {
 }
 
 /* sidebar */
+.item-details-sidebar {
+  position: absolute;
+  right: 15px;
+  margin-top: 106px;
+  height: 120%;
+}
 .sidebar-wrap {
   position: relative;
   height: 100%;
