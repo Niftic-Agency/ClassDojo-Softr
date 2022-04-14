@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta charset="utf-8" />
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width" />
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting" />
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+    <style type="text/css">
+      @font-face {
+        font-family: "ProximaNova-Regular";
+        src: url("https://s3.amazonaws.com/static.classdojo.com/fonts/ProximaNova-Regular.eot");
+        src: url("https://s3.amazonaws.com/static.classdojo.com/fonts/ProximaNova-Regular.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://s3.amazonaws.com/static.classdojo.com/fonts/ProximaNova-Regular.woff2")
+            format("woff2"),
+          url("https://s3.amazonaws.com/static.classdojo.com/fonts/ProximaNova-Regular.woff")
+            format("woff"),
+          url("https://s3.amazonaws.com/static.classdojo.com/fonts/ProximaNova-Regular.ttf")
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "ProximaNova-Semibold";
+        src: url("https://s3.amazonaws.com/static.classdojo.com/fonts/ProximaNova-Semibold.eot");
+        src: url("https://s3.amazonaws.com/static.classdojo.com/fonts/ProximaNova-Semibold.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://s3.amazonaws.com/static.classdojo.com/fonts/ProximaNova-Semibold.woff2")
+            format("woff2"),
+          url("https://s3.amazonaws.com/static.classdojo.com/fonts/ProximaNova-Semibold.woff")
+            format("woff"),
+          url("https://s3.amazonaws.com/static.classdojo.com/fonts/ProximaNova-Semibold.ttf")
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "ProximaNova-Bold";
+        src: url("https://static.classdojo.com/fonts/proxima/proximanova_bold/proximanova-bold-webfont.eot");
+        src: url("https://static.classdojo.com/fonts/proxima/proximanova_bold/proximanova-bold-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://static.classdojo.com/fonts/proxima/proximanova_bold/proximanova-bold-webfont.woff2")
+            format("woff2"),
+          url("https://static.classdojo.com/fonts/proxima/proximanova_bold/proximanova-bold-webfont.woff")
+            format("woff"),
+          url("https://static.classdojo.com/fonts/proxima/proximanova_bold/proximanova-bold-webfont.ttf")
+            format("truetype"),
+          url("https://static.classdojo.com/fonts/proxima/proximanova_bold/proximanova-bold-webfont.svg#proxima_novabold")
+            format("svg");
+      }
+      @font-face {
+        font-family: "ProximaNova-Extrabold";
+        src: url("https://static.classdojo.com/fonts/proxima/proximanova_extrabold/proximanova-extrabold-webfont.eot");
+        src: url("https://static.classdojo.com/fonts/proxima/proximanova_extrabold/proximanova-extrabold-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://static.classdojo.com/fonts/proxima/proximanova_extrabold/proximanova-extrabold-webfont.woff2")
+            format("woff2"),
+          url("https://static.classdojo.com/fonts/proxima/proximanova_extrabold/proximanova-extrabold-webfont.woff")
+            format("woff"),
+          url("https://static.classdojo.com/fonts/proxima/proximanova_extrabold/proximanova-extrabold-webfont.ttf")
+            format("truetype"),
+          url("https://static.classdojo.com/fonts/proxima/proximanova_extrabold/proximanova-extrabold-webfont.svg#proxima_novaextrabold")
+            format("svg");
+      }
+      @font-face {
+        font-family: "ProximaNova-Black";
+        src: url("https://static.classdojo.com/fonts/proxima/proximanova_black/proximanova-black-webfont.eot");
+        src: url("https://static.classdojo.com/fonts/proxima/proximanova_black/proximanova-black-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://static.classdojo.com/fonts/proxima/proximanova_black/proximanova-black-webfont.woff2")
+            format("woff2"),
+          url("https://static.classdojo.com/fonts/proxima/proximanova_black/proximanova-black-webfont.woff")
+            format("woff"),
+          url("https://static.classdojo.com/fonts/proxima/proximanova_black/proximanova-black-webfont.ttf")
+            format("truetype"),
+          url("https://static.classdojo.com/fonts/proxima/proximanova_black/proximanova-black-webfont.svg#proxima_novablack")
+            format("svg");
+      }
+    </style>
+    <style>
+      @import url("https://s3.amazonaws.com/fonts.classdojo.com/proximanovaforemailtemplate.css");
+      @font-face {
+        font-family: "ProximaNova-Regular";
+        src: url("https://s3.amazonaws.com/fonts.classdojo.com/ProximaNova-Regular.eot");
+        src: url("https://s3.amazonaws.com/fonts.classdojo.com/ProximaNova-Regular.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://s3.amazonaws.com/fonts.classdojo.com/ProximaNova-Regular.woff2")
+            format("woff2"),
+          url("https://s3.amazonaws.com/fonts.classdojo.com/ProximaNova-Regular.woff")
+            format("woff"),
+          url("https://s3.amazonaws.com/fonts.classdojo.com/ProximaNova-Regular.ttf")
+            format("truetype");
+      }
+      @font-face {
+        font-family: "ProximaNova-Semibold";
+        src: url("https://s3.amazonaws.com/fonts.classdojo.com/ProximaNova-Semibold.eot");
+        src: url("https://s3.amazonaws.com/fonts.classdojo.com/ProximaNova-Semibold.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://s3.amazonaws.com/fonts.classdojo.com/ProximaNova-Semibold.woff2")
+            format("woff2"),
+          url("https://s3.amazonaws.com/fonts.classdojo.com/ProximaNova-Semibold.woff")
+            format("woff"),
+          url("https://s3.amazonaws.com/fonts.classdojo.com/ProximaNova-Semibold.ttf")
+            format("truetype");
+      }
+    </style>
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+      <style>
+        * {
+          font-family: sans-serif !important;
+        }
+      </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+      /* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+      html,
+      body {
+        font-family: ProximaNova-Regular, Arial, Helvetica, sans-serif !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+      }
+      table table table {
+        table-layout: auto;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+        text-decoration: none;
+      }
+
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      *[x-apple-data-detectors],  /* iOS */
+        .unstyle-auto-detected-links *,
+        .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img + div {
+        display: none !important;
+      }
+
+      /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+      /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+      /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+        .email-container {
+          min-width: 290px !important;
+        }
+      }
+      /* iPhone 6, 6S, 7, 8, and X */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        .email-container {
+          min-width: 345px !important;
+        }
+      }
+      /* iPhone 6+, 7+, and 8+ */
+      @media only screen and (min-device-width: 414px) {
+        .email-container {
+          min-width: 384px !important;
+        }
+      }
+
+      @media (max-width: 414px) {
+        .email-container {
+          padding: 0 0 30px 0 !important;
+        }
+      }
+    </style>
+    <!-- CSS Reset : END -->
+    <!-- Reset list spacing because Outlook ignores much of our inline CSS. -->
+    <!--[if mso]>
+      <style type="text/css">
+        ul,
+        ol {
+          margin: 0 !important;
+        }
+        li {
+          margin-left: 30px !important;
+        }
+        li.list-item-first {
+          margin-top: 0 !important;
+        }
+        li.list-item-last {
+          margin-bottom: 10px !important;
+        }
+      </style>
+    <![endif]-->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+      /* What it does: Hover styles for buttons */
+      .button-td,
+      .button-a {
+        transition: all 100ms ease-in;
+        text-align: center;
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 768px) {
+        .percentage-column {
+          padding: 0 20px 20px 20px !important;
+          height: auto !important;
+          text-align: center;
+          border: 0 !important;
+        }
+
+        .percentage-column img {
+          margin: 0 auto 20px auto !important;
+        }
+
+        /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+        .fluid {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+
+        /* What it does: Forces table cells into full-width rows. */
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+        /* And center justify these ones. */
+        .stack-column-center {
+          text-align: center !important;
+        }
+
+        /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+        .center-on-narrow {
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        }
+        table.center-on-narrow {
+          display: inline-block !important;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .stack-column-small {
+          display: block !important;
+          min-width: 70% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+        /* And center justify these ones. */
+        .stack-column-small-center {
+          text-align: center !important;
+          display: block !important;
+          min-width: 70% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+
+        .responsive-avatar {
+          width: 60% !important;
+          margin: auto !important;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        td {
+          padding-left: 5px !important;
+          padding-right: 5px !important;
+        }
+        .main-logo {
+          padding-top: 20px !important;
+        }
+        .section-td {
+          padding-top: 30px !important;
+        }
+        .content-section-text {
+          font-size: 16px !important;
+        }
+        .width-full {
+          width: 100% !important;
+        }
+        .stack-column table {
+          width: 100% !important;
+        }
+        .button {
+          font-size: 17px !important;
+        }
+
+        /* What it does: Forces table cells into full-width rows. */
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+        /* And center justify these ones. */
+        .stack-column-center {
+          text-align: center !important;
+        }
+
+        /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+        .center-on-narrow {
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        }
+        table.center-on-narrow {
+          display: inline-block !important;
+        }
+      }
+    </style>
+    <!-- Progressive Enhancements : END -->
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+  </head>
+  <!--
+	The email background color (#222222) is defined in three places:
+	1. body tag: for most email clients
+	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+	3. mso conditional: For Windows 10 Mail
+-->
+  <body
+    width="100%"
+    style="
+      margin: 0;
+      padding: 0 !important;
+      mso-line-height-rule: exactly;
+      background-color: #f7f8ff;
+    "
+  >
+    <center style="width: 100%; background-color: #f7f8ff">
+      <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F8F8F9;">
+    <tr>
+    <td>
+    <![endif]-->
+
+      <!-- Visually Hidden Preheader Text : BEGIN -->
+      <div
+        style="
+          display: none;
+          font-size: 1px;
+          line-height: 1px;
+          max-height: 0px;
+          max-width: 0px;
+          opacity: 0;
+          overflow: hidden;
+          mso-hide: all;
+          font-family: ProximaNova-Regular, Arial, Helvetica, sans-serif !important;
+        "
+      >
+        Help students develop those essential skills that are so important in
+        the real world!
+      </div>
+      <!-- Visually Hidden Preheader Text : END -->
+
+      <!-- Create white space after the desired preview text so email clients don't pull other distracting text into the inbox preview. Extend as necessary. -->
+      <!-- Preview Text Spacing Hack : BEGIN -->
+      <div
+        style="
+          display: none;
+          font-size: 1px;
+          line-height: 1px;
+          max-height: 0px;
+          max-width: 0px;
+          opacity: 0;
+          overflow: hidden;
+          mso-hide: all;
+          font-family: ProximaNova-Regular, Arial, Helvetica, sans-serif !important;
+        "
+      >
+        &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+      </div>
+      <!-- Preview Text Spacing Hack : END -->
+
+      <!--
+            Set the email width. Defined in two places:
+            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 500px.
+            2. MSO tags for Desktop Windows Outlook enforce a 500px width.
+            Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 500px is a good width. Change with caution.
+        -->
+      <div
+        style="
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 50px 10px 30px 10px;
+          background: #f7f8ff;
+        "
+        class="email-container"
+      >
+        <!--[if mso]>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="500">
+            <tr>
+            <td>
+            <![endif]-->
+
+        <!-- Email Body : BEGIN -->
+        <table
+          role="presentation"
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          width="100%"
+          align="center"
+          style="margin: 0 auto; background: #f5f5f3"
+        >
+          <!-- Email Header : BEGIN -->
+
+          <!-- Email Header : END -->
+
+          <!-- 1 Column Text + Button : BEGIN -->
+          <table
+            class="width-full sections-table"
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            align="center"
+            style="
+              margin: 0 auto;
+              max-width: 600px;
+              border-radius: 34px;
+              background-color: #fff;
+            "
+          >
+            <!-- Email Header : BEGIN -->
+            <tr class="header">
+              <td
+                width="100%"
+                style="width: 50%; padding-top: 40px; text-align: center"
+              >
+                <img
+                  src="https://legacy-image-prod.s3.amazonaws.com/uploads/6a93caa7fdb76f505e26a4316535ffa6808b9d6298188abc76f0fcec8cba275e957b6250bcae2723b5cdb093e519c813826fba8c0998491adf057e387386d4cf.png"
+                  style="display: block; margin: 0 auto; margin-top: 30px"
+                  width="245"
+                  alt="ClassDojo Experiences Logo"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="section-td"
+                style="width: 100%; background-color: #fff; padding: 24px 0"
+                width="100%;"
+              >
+                <tr>
+                  <td
+                    style="
+                      padding: 0 50px;
+                      text-align: center;
+                      vertical-align: middle;
+                      font-family: ProximaNova-Semibold, Helvetica Neue,
+                        Helvetica, Helvetica, Arial, sans-serif;
+                      font-weight: 700;
+                      font-size: 24px;
+                      line-height: 30px;
+                      text-align: center;
+                      letter-spacing: -0.25px;
+                      color: #2c2a50;
+                    "
+                  >
+                    <b>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </b>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    valign="top"
+                    width="100%"
+                    style="
+                      font-family: ProximaNova-Semibold, Arial, Helvetica,
+                        sans-serif !important;
+                      text-align: center;
+                      padding: 0 40px;
+                    "
+                  >
+                    <p
+                      class="content-section-text"
+                      style="
+                        padding: 10px 0;
+                        text-align: left;
+                        vertical-align: middle;
+                        font-family: ProximaNova-Regular, Helvetica Neue,
+                          Helvetica, Helvetica, Arial, sans-serif;
+                        font-size: 18px;
+                        color: #2c2a50;
+                        line-height: 22px;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 26px;
+                        text-align: center;
+                        letter-spacing: -0.25px;
+                      "
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Donec congue urna quis viverra euismod. Fusce interdum vel
+                      purus ac euismod. Aliquam erat volutpat.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    valign="top"
+                    width="100%"
+                    style="text-align: center; padding: 0 40px"
+                  >
+                    <a
+                      href="https://experiences.classdojo.com"
+                      class="button"
+                      target="_blank"
+                      style="
+                        font-size: 18px;
+                        line-height: 22px;
+                        font-family: ProximaNova-Bold, Helvetica Neue, Helvetica,
+                          Helvetica, Arial, sans-serif;
+                        color: #ffffff;
+                        text-decoration: none;
+                        background-color: #00a8fb;
+                        border-top: 19px solid #00a8fb;
+                        border-bottom: 19px solid #00a8fb;
+                        border-right: 24px solid #00a8fb;
+                        border-left: 24px solid #00a8fb;
+                        display: inline-block;
+                        border-radius: 40px;
+                        background: #00b2f7;
+                        border-radius: 30px;
+                      "
+                    >
+                      Discover Experiences
+                    </a>
+                  </td>
+                </tr>
+                <!-- 1 Column Text + Button : END -->
+                <!-- Featured Classes -->
+                <tr>
+                  <td style="padding: 0 40px; padding-top: 50px">
+                    <p
+                      style="
+                        font-family: ProximaNova-Bold, Helvetica Neue, Helvetica,
+                          Helvetica, Arial, sans-serif;
+                        font-weight: 800;
+                        font-size: 18px;
+                        line-height: 22px;
+                        text-align: center;
+                        color: #2c2a50;
+                      "
+                    >
+                      Featured classes
+                    </p>
+                  </td>
+                </tr>
+                <!-- First Class -->
+                <tr>
+                  <td style="padding: 0 40px">
+                    <a href="https://experiences.classdojo.com" target="_blank">
+                      <div
+                        style="
+                          border-bottom: 1px solid #d3d7ec;
+                          padding: 24px 0;
+                        "
+                      >
+                        <img
+                          style="
+                            width: 30%;
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 10px;
+                          "
+                          src="https://legacy-image-prod.s3.amazonaws.com/uploads/8d33e9f591e3ccf7239a392e9432a84a58ff14bd4d125cb078f0d3132e18bfa45fb44b0461880421aab6da2c9c1aef55ff5fa8bf3dcbf76b817324b82280c16b.png"
+                        />
+                        <p
+                          style="
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-family: ProximaNova-Bold, Helvetica Neue,
+                              Helvetica, Helvetica, Arial, sans-serif;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 14px;
+                            letter-spacing: 0.5px;
+                            text-transform: uppercase;
+                            color: #7174a0;
+                          "
+                        >
+                          Arts<br /><span
+                            style="
+                              font-weight: 700;
+                              font-size: 18px;
+                              line-height: 26px;
+                              letter-spacing: -0.25px;
+                              color: #2c2a50;
+                              text-transform: none;
+                            "
+                            >Most popular TikTok Choreographies</span
+                          ><br /><span
+                            style="
+                              font-weight: 700;
+                              font-size: 16px;
+                              line-height: 24px;
+                              letter-spacing: -0.25px;
+                              color: #7174a0;
+                              text-transform: none;
+                            "
+                            >Monday, April 11th @ 3:00pm</span
+                          >
+                        </p>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+                <!-- End of First Class -->
+                <!-- Second Class -->
+                <tr>
+                  <td style="padding: 0 40px">
+                    <a href="https://experiences.classdojo.com" target="_blank">
+                      <div style="padding: 24px 0">
+                        <img
+                          style="
+                            width: 30%;
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 10px;
+                          "
+                          src="https://legacy-image-prod.s3.amazonaws.com/uploads/8d33e9f591e3ccf7239a392e9432a84a58ff14bd4d125cb078f0d3132e18bfa45fb44b0461880421aab6da2c9c1aef55ff5fa8bf3dcbf76b817324b82280c16b.png"
+                        />
+                        <p
+                          style="
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-family: ProximaNova-Bold, Helvetica Neue,
+                              Helvetica, Helvetica, Arial, sans-serif;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 14px;
+                            letter-spacing: 0.5px;
+                            text-transform: uppercase;
+                            color: #7174a0;
+                          "
+                        >
+                          Arts<br /><span
+                            style="
+                              font-weight: 700;
+                              font-size: 18px;
+                              line-height: 26px;
+                              letter-spacing: -0.25px;
+                              color: #2c2a50;
+                              text-transform: none;
+                            "
+                            >Most popular TikTok Choreographies</span
+                          ><br /><span
+                            style="
+                              font-weight: 700;
+                              font-size: 16px;
+                              line-height: 24px;
+                              letter-spacing: -0.25px;
+                              color: #7174a0;
+                              text-transform: none;
+                            "
+                            >Monday, April 11th @ 3:00pm</span
+                          >
+                        </p>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+                <!-- End of Second Class -->
+                <!-- End of Featured Classes -->
+                <tr>
+                  <td
+                    valign="top"
+                    width="100%"
+                    style="
+                      text-align: center;
+                      padding: 10px 40px;
+                      padding-bottom: 50px;
+                    "
+                  >
+                    <a
+                      href="https://experiences.classdojo.com"
+                      class="button"
+                      target="_blank"
+                      style="
+                        font-size: 18px;
+                        line-height: 22px;
+                        font-family: ProximaNova-Bold, Helvetica Neue, Helvetica,
+                          Helvetica, Arial, sans-serif;
+                        color: #ffffff;
+                        text-decoration: none;
+                        background-color: #00a8fb;
+                        border-top: 19px solid #00a8fb;
+                        border-bottom: 19px solid #00a8fb;
+                        border-right: 24px solid #00a8fb;
+                        border-left: 24px solid #00a8fb;
+                        display: inline-block;
+                        border-radius: 40px;
+                        background: #00b2f7;
+                        border-radius: 30px;
+                      "
+                    >
+                      See all courses
+                    </a>
+                  </td>
+                </tr>
+              </td>
+            </tr>
+          </table>
+        </table>
+        <!-- Email Body : END -->
+
+        <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+      </div>
+
+      <!-- Full Bleed Background Section : BEGIN -->
+      <table
+        class="width-full"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        border="0"
+        align="center"
+        style="margin: 0 auto; max-width: 600px"
+      >
+        <tr>
+          <td
+            style="
+              font-family: ProximaNova-Regular, Helvetica Neue, Helvetica,
+                Helvetica, Arial, sans-serif;
+              color: #a7a7a7;
+              line-height: 24px;
+              font-size: 12px;
+              text-align: center;
+              padding: 0 0 5px 0;
+            "
+          >
+            Sent with love from ClassDojo HQ <br />
+            735 Tehama Street, San Francisco CA 94103
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              padding: 0px 0 20px 0;
+              text-align: center;
+              font-family: ProximaNova-Regular, Helvetica Neue, Helvetica,
+                Helvetica, Arial, sans-serif;
+              font-size: 12px;
+              line-height: 17px;
+            "
+          >
+            <a
+              href="[unsubscribe]"
+              target="_blank"
+              style="text-decoration: none; color: #a7a7a7"
+              >Unsubscribe
+            </a>
+            &nbsp; &nbsp; &nbsp;
+            <a
+              href="https://www.classdojo.com/privacy/"
+              target="_blank"
+              style="text-decoration: none; color: #a7a7a7"
+              >Privacy Policy</a
+            >
+            &nbsp; &nbsp; &nbsp;
+            <a
+              href="[Weblink]"
+              target="_blank"
+              style="text-decoration: none; color: #a7a7a7"
+              >View in Web Browser</a
+            >
+          </td>
+        </tr>
+      </table>
+      <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+
+      <!-- Full Bleed Background Section : END -->
+
+      <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </center>
+  </body>
+</html>
