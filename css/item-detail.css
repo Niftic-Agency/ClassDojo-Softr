@@ -237,11 +237,11 @@ p[data-type="label"] {
 /* Mobile */
 
 @media (max-width: 991px) {
-  /* Teacher Image
-  #list-details2 .d-inline-block[data-type="image"] {
+  /* Teacher Image */
+  .col-list-details2 .sw-js-single-item-elements .sw-pre-image-container:not(:first-of-type) .sw-img span[data-type="image"] {
     width: 64px !important;
     border-radius: 50% !important;
-  } */
+  }
   /* Sidebar */
   .item-details-sidebar {
     position: unset;
