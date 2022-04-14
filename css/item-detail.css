@@ -232,11 +232,16 @@ p[data-type="label"] {
   color: #FFFFFF;
   font-weight: 700;
   font-size: 18px;
+  outline: 0;
 }
 
 /* Mobile */
 
 @media (max-width: 991px) {
+  /* Hero Image */
+  .col-list-details2 .sw-js-single-item-elements .sw-pre-image-container:first-of-type  .sw-img [data-type="image"] {
+    border-radius: 24px !important;
+  }
   /* Teacher Image */
   .col-list-details2 .sw-js-single-item-elements .sw-pre-image-container:not(:first-of-type) .sw-img span[data-type="image"] {
     width: 64px !important;
