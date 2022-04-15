@@ -37,3 +37,5 @@ if( listArea ) {
         });
     });
 }
+
+document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no");

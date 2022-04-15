@@ -172,10 +172,10 @@ header#hero2 .container .row > div h1 {
 }
 
 header#hero2 .container .row > div p {
-    color: #858490 !important;
-    font-weight: 600 !important;
-    font-size: 22px !important;
-    line-height: 36px !important;
+    color: #7174A0 !important;
+    font-weight: 800 !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
     letter-spacing: -0.35px !important;
     margin-top: 6px;
     margin-bottom: 0;
@@ -251,6 +251,9 @@ header#hero2 .container .row > div p {
     background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.9102 9.77209C17.2539 9.77209 17.5352 10.0252 17.5352 10.3971V10.5221H19.4102C19.7539 10.5221 20.0352 10.7752 20.0352 11.1471C20.0352 11.4908 19.7539 11.7721 19.4102 11.7721H19.3477L19.2977 11.9127C19.0195 12.6502 18.5945 13.369 18.057 13.9565C18.0852 13.9721 18.1133 13.9627 18.1414 14.0065L18.732 14.3596C19.0289 14.5377 19.1227 14.9221 18.9445 15.219C18.7695 15.5158 18.3852 15.6096 18.0883 15.4315L17.4977 15.0783C17.3602 14.994 17.1945 14.9065 17.0883 14.8127C16.7602 15.0471 16.4039 15.2502 16.0289 15.419L15.9133 15.469C15.5977 15.6096 15.2289 15.4658 15.0883 15.1502C14.9477 14.8346 15.0914 14.4658 15.407 14.3252L15.5195 14.2752C15.7195 14.1846 15.9133 14.0565 16.0977 13.969L15.7195 13.5877C15.4727 13.344 15.4727 12.9502 15.7195 12.7065C15.9633 12.4596 16.357 12.4596 16.6008 12.7065L17.057 13.1596L17.0758 13.1502C17.4633 12.769 17.7789 12.294 18.007 11.744H14.6602C14.2883 11.744 14.0352 11.4908 14.0352 11.119C14.0352 10.7752 14.2883 10.494 14.6602 10.494H16.2852V10.369C16.2852 10.0252 16.5383 9.74397 16.9102 9.74397V9.77209V9.77209ZM7.91016 11.9346L8.50391 13.2721H7.28828L7.91016 11.9346ZM2.91016 8.64709C2.91016 7.54241 3.80547 6.64709 4.91016 6.64709H20.9102C22.0133 6.64709 22.9102 7.54241 22.9102 8.64709V16.6471C22.9102 17.7502 22.0133 18.6471 20.9102 18.6471H4.91016C3.80547 18.6471 2.91016 17.7502 2.91016 16.6471V8.64709ZM12.9102 16.6471H20.9102V8.64709H12.9102V16.6471ZM8.48203 10.144C8.38203 9.91897 8.15703 9.77209 7.91016 9.77209C7.66328 9.77209 7.43828 9.91897 7.33828 10.144L5.33891 14.644C5.19891 14.9315 5.34078 15.3283 5.65641 15.469C5.97172 15.6096 6.34141 15.4658 6.48203 15.1502L6.76016 14.494H9.06016L9.33828 15.1502C9.47891 15.4658 9.84766 15.6096 10.1633 15.469C10.4789 15.3283 10.6227 14.9315 10.482 14.644L8.48203 10.144Z' fill='%2300B2F7'/%3E%3C/svg%3E%0A");
 }
 
+.sw-js-list-item-header {
+    padding-bottom: 0px !important;
+}
 
 /* Mobile filter holder */
 .mobile-filter-holder {
@@ -320,4 +323,40 @@ header#hero2 .container .row > div p {
         justify-content: center;
         flex-direction: column!important;
     }
+    footer .container > .row > .col-7, footer .container > .row > .col-5 {
+        width: 100%;
+        max-width: unset;
+        flex: none;
+        text-align: center;
+    }
+
+    footer .container > .row > .col-5 {
+        order: 1;
+    }
+    footer .container > .row > .col-7 {
+        order: 2;
+    }
+    footer .container > .row > .col-5 .text-right a {
+        font-size: 24px !important;
+    }
+    footer .container > .row > .col-5 .text-right {
+        text-align: center !important;
+        padding-bottom: 30px;
+    }
+}
+
+footer hr {
+    display: none !important;
+}
+
+footer small { 
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    color: #7174A0 !important;
+    padding-bottom: 0px !important;
+}
+
+footer .container > .row > .col-12.pb-2 {
+    display: none !important;
 }
