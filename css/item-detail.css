@@ -146,6 +146,7 @@ p[data-type="label"] {
   color: #2C2A50 !important;
   border: 0 !important;
   padding-left: 0 !important;
+  padding-right: 40px !important
 }
 #faq1 .sw-accordion-border [data-toggle="collapse"] .arrow {
   border: 0;
