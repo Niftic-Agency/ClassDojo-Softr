@@ -193,6 +193,10 @@ header#hero2 .container .row > div p {
     }
 }
 
+.sw-js-single-item-elements > div:nth-child(5) {
+    display: block;
+}
+
 /* Icons */
 .js-list-item .sw-pre-heading3-container {
     height: unset !important;
@@ -347,7 +351,7 @@ header#hero2 .container .row > div p {
     }
 }
 
-footer {
+footer#home_footer2 {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
 }
@@ -367,3 +371,4 @@ footer small.sw-padding-bottom-3xs {
 footer .container > .row > .col-12.pb-2 {
     display: none !important;
 }
+
