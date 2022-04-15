@@ -1,5 +1,6 @@
 /* all classes button */
 #list-details2 {
+  padding-top: 30px !important;
   padding-bottom: 32px !important;
 }
 .col-list-details2 .sw-js-button-div [data-type="button"] {
@@ -145,6 +146,7 @@ p[data-type="label"] {
   color: #2C2A50 !important;
   border: 0 !important;
   padding-left: 0 !important;
+  padding-right: 40px !important
 }
 #faq1 .sw-accordion-border [data-toggle="collapse"] .arrow {
   border: 0;
@@ -191,6 +193,11 @@ p[data-type="label"] {
   position: sticky;
   position: -webkit-sticky;
   top: 32px;
+  opacity: 1;
+  transition: all .2s ease-in-out;
+}
+.sidebar-box.fade-out {
+  opacity: 0;
 }
 .sidebar-box h3 {
   font-weight: 800;
@@ -279,6 +286,10 @@ p[data-type="label"] {
       border-radius: 0;
       z-index: 2;
       padding: 12px;
+  }
+  .sidebar-wrap .sidebar-box.fade-out {
+    opacity: 1;
+    bottom: -100%;
   }
   .sidebar-wrap .sidebar-box h3,
   .sidebar-wrap .sidebar-box .teacher,
